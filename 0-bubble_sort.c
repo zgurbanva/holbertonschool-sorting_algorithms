@@ -3,15 +3,17 @@
 /**
  * bubble_sort - Sorts an array of integers in ascending order
  *               using the Bubble sort algorithm
- * @array: Pointer to the array to be sorted
+ * @array: The array to be sorted
  * @size: Number of elements in the array
+ *
+ * Description: Prints the array after every swap.
  */
 void bubble_sort(int *array, size_t size)
 {
 	size_t i, n;
 	int tmp, swapped;
 
-	if (!array || size < 2)
+	if (array == NULL || size < 2)
 		return;
 
 	for (n = size; n > 1; n--)
